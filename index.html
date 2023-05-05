@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles/main.css">
+	<script src="./scripts/main.js" defer></script>
 </head>
 <body class="body">
 	<header class="menu_section">
@@ -97,9 +98,39 @@
 		<section class="fyp_section"></section>
 	</main>
 	<aside class="sidebar_section">
-		<section class="search_bar"></section>
+		<section class="search_bar_section">
+			<label for="search_bar">
+				<img src="./assets/lupa.png" alt="lupa de la barra de búsqueda" class="search_bar_img">
+			</label>
+			<input type="text" name="search_bar" id="search_bar" placeholder="Buscar en Twitter">
+		</section>
 		<section class="sidebar_section__article">
-			<nav class="news__items"></nav>
+			<h2>Qu&eacute; est&aacute; pasando</h2>
+			<nav class="news__items">
+				<div>
+					<p class="news__items__subtitle">Premier League &middot; Anoche</p>
+					<p class="news_items_title">Brighton &amp; Hove Albion vs Manchester United</p>
+					<img src="./assets/article-foto.jpg" alt="Foto del partido entre Manchester City y Brighton" class="news_img">
+				</div>
+				<div>
+					<p class="news__items__subtitle">Tendencias</p>
+					<p class="news_items_title">Esc&aacute;ndalo</p>
+					<p class="news__items__subtitle">36,1 mil Tweets</p>
+					<img src="./assets/menu-puntos.png" alt="menu de tres puntos" class="news_items__menu_ico">
+				</div>
+				<div>
+					<p class="news__items__subtitle">Tendencias en Cuba</p>
+					<p class="news_items_title">Cuba</p>
+					<p class="news__items__subtitle">163 mil Tweets</p>
+					<img src="./assets/menu-puntos.png" alt="menu de tres puntos" class="news_items__menu_ico">
+				</div>
+				<div>
+					<p class="news__items__subtitle">Deportes &middot; Tendencia</p>
+					<p class="news_items_title">Mbapp&eacute;</p>
+					<p class="news__items__subtitle">29,1 mil Tweets</p>
+					<img src="./assets/menu-puntos.png" alt="menu de tres puntos" class="news_items__menu_ico">
+				</div>
+			</nav>
 		</section>
 		<section class="sidebar_section__article">
 			<nav class="sidebar_section__article__items"></nav>
