@@ -7,7 +7,7 @@
 .body{
     width: 100%;
     display: grid;
-    grid-template-columns: auto 1fr 400px;
+    grid-template-columns: 265px auto 400px;
 }
 a{
     text-decoration: none;
@@ -17,9 +17,11 @@ a{
 /*MENU*/
 header.menu_section{
     position: fixed;
+    left: 0;
+    right: 0;
     width: 265px;
     height: 100vh;
-    border-right: 1px solid black;
+    border-right: 1px solid darkgrey;
 }
 
 ul.nav_list>li{
@@ -97,6 +99,10 @@ li a img.nav_list__ico{
 /*ASIDE*/
 .sidebar_section{
     grid-area: 1 / 3;
+    border-left: 1px solid darkgrey;
+    height: 100vh;
+    position: fixed;
+    right: 0;
 }
 .search_bar_section{
     width: 385px;
@@ -164,4 +170,151 @@ li a img.nav_list__ico{
 }
 .news_items_title{
     font-weight: bold;
+}
+
+/*MAIN*/
+.content_section{
+    grid-area: 1 / 2;
+    display: grid;
+    grid-template: 70px 50px 100px 50px 1fr / auto auto;
+}
+.content_section h1{
+    grid-area: 1 / 1;
+    font-size: 24px;
+    margin: 8px;
+}
+.content_section .content_toggle{
+    grid-area: 2 / 1 / 2 / span 2;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid darkgrey;
+}
+.content_section .content_toggle .h2_selected{
+    border-bottom: 3px solid #1d9bf0;
+    padding-bottom: 10px;
+    border-radius: 1px;
+}
+
+.tweet_section{
+    grid-area: 3 / 1 / 5 / span 2;
+    display: grid;
+    grid-template-columns: 80% 20%;
+
+}
+.tweet_section .tweet_section__pfp{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.tweet_section>div.icons_div{
+    margin:10px 0 0 60px;
+    width: 40%;
+    height: 38px;
+    display: inline-flex;
+    justify-content: space-around;
+    grid-area: 2 / 1;
+}
+div.tweet_div{
+    display: flex;
+}
+div.tweet_div input{
+    border: none;
+    font-size: 20px;
+}
+div.tweet_div input:focus{
+    outline: none;
+}
+.tweet_section button{
+    grid-area: 2 / 2;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background: #8dccf7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}
+.tweet_section button:hover{
+    background: #1391e6;
+}
+.tweet_section .icons_div img {
+    padding: 10px;
+}
+.tweet_section .icons_div img:hover{
+    background: rgba(209, 206, 206, 0.26);
+    border-radius: 30%;
+    cursor: pointer;
+}
+.fyp_section{
+    width: 100%;
+    grid-area: 5 / 1 / 6 / span 2;
+    border-top: 1px solid darkgrey;
+}
+.fyp_section article{
+    width: 100%;
+    display: grid;
+    grid-template: 50px 1fr / 80px 1fr;
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 20px;
+}
+.fyp_section article:hover{
+    background: rgba(209, 206, 206, 0.26);
+    cursor: pointer;
+}
+.fyp_section .post_pfp{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.fyp_section .post_img{
+    grid-area: 3 / 2;
+    width: 90%;
+    border-radius: 20px;
+    margin:20px 20px 0 0;
+}
+.fyp_section p{
+    grid-area: 2 / 2;
+}
+.fyp_section h3{
+    margin-top: 16px;
+    grid-area: 1/ 2;
+}
+#pfp_name{
+    width: 40%;
+    margin-top: 17px;
+    position: relative;
+    left: 180px;
+    grid-area: 1/ 2;
+}
+#interactions{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    grid-area: 4 / 2 / 5 / span 2;
+}
+#interactions div{
+    display: grid;
+    grid-template: 10px / auto auto;
+    cursor: pointer;
+    padding: 10px;
+}
+#interactions div p{
+    padding-left: 16px;
+    grid-area: 2 / 1;
+}
+#interactions div img{
+    width: 20px;
+    grid-area: 1 / 1;
+}
+#message_ico:hover{
+    background: #e1eef6;
+    border-radius: 20px;
+    color: #57aff3;
+}
+#retweet_ico:hover{
+    background: #def1ea;
+    border-radius: 20px;
+    color: #6aecbf;
 }
