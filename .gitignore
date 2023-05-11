@@ -1,0 +1,53 @@
+# Ignorar archivos y directorios generados por IDEs y editores de texto
+.idea/
+.vscode/
+*.swp
+*~
+
+# Ignorar archivos de compilación y ejecutables
+*.o
+*.pyc
+*.exe
+*.dll
+
+# Ignorar archivos de dependencias y paquetes
+node_modules/
+vendor/
+packages/
+
+# Ignorar archivos de respaldo y temporales
+*.bak
+*.tmp
+*.log
+
+# Ignorar archivos de configuración de entorno
+.env
+.env.local
+.env.*.local
+
+# Ignorar archivos de caché y registros
+cache/
+logs/
+
+# Ignorar archivos de medios y recursos estáticos generados
+uploads/
+public/assets/
+
+# Ignorar archivos de bases de datos y copias de seguridad
+*.db
+*.sql
+*.sqlite
+
+# Ignorar archivos de documentación generada
+docs/build/
+docs/api/
+
+# Ignorar archivos de pruebas y resultados de pruebas
+tests/
+coverage/
+
+# Ignorar archivos de almacenamiento de sesiones
+session/
+
+# Ignorar archivos .DS_Store generados por macOS
+.DS_Store
